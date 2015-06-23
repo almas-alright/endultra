@@ -1,0 +1,385 @@
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h6, ol, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+}
+img, fieldset {
+	border: 0;
+}
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, nav, section {
+	display: block;
+}
+h1, h2, h3, h4, h5 {
+}
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+body {
+	background: #FFF;
+	color: #6c6c6c;
+	font-size: 16px;
+	font-family: 'Myriad Pro Regular';
+	line-height: normal;
+	font-weight: normal;
+        /*overflow: hidden;*/
+}
+.align-left {
+	float: left;
+	padding: 5px 20px 5px 0;
+}
+.align-center {
+	margin: 0 auto;
+	display: block;
+}
+.align-right {
+	float: right;
+	padding: 5px 0px 5px 20px;
+}
+.home-page-area {
+	width: 90%;
+	padding: 0% 5%;
+	/*height: auto;*/
+	background: #000;
+}
+.left-area {
+	width: 72%;
+	padding: 0 4%;
+	float: left;
+        height: auto;
+	background: #FFF;
+        
+}
+.right-area {
+	width: 16%;
+	padding: 0 2%;
+	right:0;
+	height: auto;
+	background: #478bca;
+        position: fixed;
+}
+.header {
+	width: 100%;
+	height: 162px;
+}
+.logo {
+	float: left;
+	width: 30%;
+}
+.banner-area {
+	float: left;
+	text-align: center;
+	width: 70%;
+}
+.page-name {
+	padding: 50px 0;
+}
+ul.top-bar {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	float: right;
+}
+ul.top-bar li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+}
+ul.top-bar li a:hover {
+	opacity: 0.5;
+}
+.menu {
+	margin-left: -84px;
+	margin-right: -32px;
+}
+.menu ul {
+}
+.menu ul li {
+	list-style: none;
+}
+.menu ul li.active a {
+	background: url(../images/menu-icon.png) no-repeat center left;
+}
+.menu ul li a {
+	text-decoration: none;
+	color: #FFF;
+	text-transform: uppercase;
+	display: block;
+	padding: 20px 0px 20px 80px;
+	font-size: 19px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color=#333333)";/*IE 8*/
+	text-shadow: 0px 0px 1px #333333;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color=#333333); /*IE 5.5-7*/
+}
+.menu ul li a:hover {
+	background: url(../images/menu-icon.png) no-repeat center left;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color=#333333)";/*IE 8*/
+	text-shadow: 0px 0px 1px #333333;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=90, Color=#333333); /*IE 5.5-7*/
+}
+.content-area {
+	overflow-y: scroll;
+	max-height: 800px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+}
+.page-content {
+	padding: 10px 50px 0px 0px;
+        
+}
+.home-page-title {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.video.home-video {
+	margin: 0 auto !important;
+	padding: 0;
+	background: #EEE;
+}
+.home-link {
+	clear: both;
+}
+.home-content-left {
+	float: left;
+	width: 70%;
+}
+.home-content-left h1 {
+	padding: 12px 0;
+}
+.home-content-right {
+	float: left;
+	width: 30%;
+}
+a.learn-more {
+	display: table;
+	margin: 50px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	color: #FFF;
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #0072bb;
+	border: 0px solid #000000;
+	-moz-border-radius: 5px;/*Firefox*/
+	-webkit-border-radius: 5px;/*Safari, Chrome*/
+	border-radius: 5px;
+}
+.home-image-area {
+	position: relative;
+}
+img.home-image {
+	width: 100%;
+}
+/***********Start Video Page**********/
+
+
+ul.video-cat-list {
+	margin: 0;
+	padding: 30px 0;
+}
+ul.video-cat-list li {
+	width: 40%;
+	list-style: none;
+	display: inline-block;
+	margin-right: 5%;
+}
+ul.video-cat-list li a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	background-color: #498aca;
+	border: 0px solid #000000;
+	-moz-border-radius: 5px;/*Firefox*/
+	-webkit-border-radius: 5px;/*Safari, Chrome*/
+	border-radius: 5px;
+	display: block;
+}
+ul.video-cat-list li.active a {
+	background: #0072bc;
+}
+
+
+ul.video-list li {
+	list-style: none;
+	display: inline-block;
+	width: 30%;
+	height: auto;
+	margin: 2% 2% 0 0;
+	background: #478BCA;
+	color:#F3F3F3;
+	text-align:center;
+	padding: .5%;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color=#303030)";/*IE 8*/
+	-moz-box-shadow: 0px 0px 5px #303030;/*FF 3.5+*/
+	-webkit-box-shadow: 0px 0px 5px #303030;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+	box-shadow: 0px 0px 5px #303030;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color=#303030); /*IE 5.5-7*/
+}
+/***********Start Testimonials Page**********/
+
+.testimonials-list {
+	width: 100%;
+	clear: both;
+	height: 200px;
+	padding-bottom: 30px;
+}
+.clients-images {
+	float: left;
+	width: 25%;
+	height: 200px;
+	text-align: left;
+}
+.clients-details {
+	float: left;
+	width: 75%;
+	height: 200px;
+}
+.clients-company {
+	font-size: 15px;
+}
+/***********Start Contact Page**********/
+.text-field {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	height: 30px;
+}
+.textarea-field {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	height: 100px;
+}
+.submit-btn {
+	display: block;
+	padding: 10px 30px;
+	font-size: 18px;
+	background: #478BCA;
+	color: #FFF;
+	border: none;
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease;/* Safari 3.2+, Chrome */
+	-moz-transition: all 0.5s ease;/* Firefox 4-15 */
+	-o-transition: all 0.5s ease;/* Opera 10.5-12.00 */
+	transition: all 0.5s ease;/* Firefox 16+, Opera 12.50+ */
+}
+.submit-btn:hover {
+	background: #0072BC;
+}
+/*Product Over View*/
+
+.align-center {
+	margin: 0 auto;
+	display: block;
+}
+ @media screen and (max-width: 1080px) {
+.header {
+	text-align: center;
+	height: auto;
+}
+.left-area {
+	width: 90%;
+	padding: 0 5%;
+}
+.right-area {
+	width: 90%;
+	padding: 0 5%;
+	height: auto;
+	background: none;
+}
+.right-area .header {
+	display: none;
+}
+.logo {
+	float: none;
+	width: 100%;
+}
+.banner-area {
+	float: none;
+	width: 100%;
+}
+.page-name {
+	padding: 0;
+}
+.page-content {
+	padding-right: 0;
+}
+.menu {
+	margin: 0;
+	padding: 0;
+}
+.menu ul {
+	margin-left: 0;
+	margin-right: 0;
+}
+.menu ul li a {
+	padding: 20px 30px;
+	background-color: #498aca;
+	border: 0px solid #000000;
+	-moz-border-radius: 5px;/*Firefox*/
+	-webkit-border-radius: 5px;/*Safari, Chrome*/
+	border-radius: 5px;
+}
+.menu ul li {
+	width: 40%;
+	display: inline-block;
+	padding: 10px 4.8%;
+}
+.menu ul li a:hover {
+	background: #0072bc;
+}
+.menu ul li.active a {
+	background: #0072bc;
+}
+/***********Start Video Page**********/
+
+ul.video-list li {
+	width: 45%;
+	height: auto;
+	margin: 2% 2% 0 0;
+	padding: .5%;
+}
+}
+
+
+.req-in label, .req-in input, .req-in textarea, .req-in button
+{
+    clear: both;
+    display: block;
+    
+}
+
+.req-in input, .req-in textarea
+{
+    margin: 3px 0;
+    width:50%;
+}
+
+.send-success{
+    display: none;
+}
